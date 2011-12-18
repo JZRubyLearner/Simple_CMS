@@ -1,0 +1,11 @@
+<h1>Demo#Hello!!!!</h1>
+<p>Find me in app/views/demo/index.html.erb</p>
+
+ID: <%= @id%> <br>
+Next Page: <%= @page+1 %> <br>
+
+<% @array.each do |n| %>
+<%=n %> <br>
+<% end %>
+<%=link_to("link back to Index", {:controler=>'demo', :action=>'index', :id=>1,:page=>3})%>
+<%=params.inspect%>

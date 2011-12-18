@@ -1,0 +1,7 @@
+<h1>Demo#Hello!!!!</h1>
+<p>Find me in app/views/demo/index.html.erb</p>
+
+<%= link_to('Roar', '#', :onclick=> "jsRoar(); return true;") %>
+<% text = "'); alert('Gotcha!" %>
+<%= javascript_tag("alert('#{escape_javascript(text)}');")%>
+
